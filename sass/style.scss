@@ -1,0 +1,19 @@
+@import "core/_reset.scss";
+@import "core/_variables.scss";
+@import "_layout.scss";
+
+@import "../fonts/_font.sass";
+@import "_icon.scss";
+
+@import "components/_button.scss";
+@import "components/_text.scss";
+@import "components/_menu.scss";
+
+@import "_home.scss";
+@import "_about.scss";
+@import "_goal.scss";
+@import "_price.scss";
+@import "_donate.scss";
+@import "_photo.scss";
+@import "_clients.scss";
+@import "_footer.scss"

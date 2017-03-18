@@ -1,0 +1,113 @@
+.photo{
+    padding: 96px 151px 91px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e7ebef;
+}
+
+    .photo__title{
+        color: #72a9ae;
+        font-family: $base-font;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 54px;
+    }
+
+        .photo__title::after{
+            display: block;
+            content: '';
+            width: 40px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #72a9ae;
+            margin: 51px 0 83px;
+        }
+
+    .photo__images{
+        width: 100%;
+    }
+
+        .photo__images-pic{
+            display: inline-block;
+            position: relative;
+            width: 49%;
+            margin-right: 1%;
+            vertical-align: top;
+        }
+
+            .full-screen{
+                position: absolute;
+                width: 3%;
+                bottom: 20%;
+                left: 94%;
+            }
+
+            .photo__images-description{
+                color: #414546;
+                font-family: $base-font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin: 29px 0 9px 0;
+            }
+
+            .photo__images-date{
+                opacity: 0.7;
+                color: #414546;
+                font-family: $base-font;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 24px;
+                text-transform: uppercase;
+            }
+
+        .photo__images-video{
+            width: 49%;
+            display: inline-block;
+        }
+
+/* Phones ----------- */
+	@media screen 
+		and (min-device-width : 220px) 
+		and (max-device-width : 659px){
+            .photo{
+                padding: 26px 0 66px 0;
+            }
+
+                .photo__title{
+                    font-size: 30px;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+
+                    .photo__title::after{
+                        margin: 54px auto 67px;
+                    }
+
+                    .photo__images{
+                        padding-left: 22px; 
+                    }
+
+                        .photo__images-pic{
+                            display: block;
+                            position: static;
+                            width: 100%;
+                            margin-right: 0;
+                        }
+
+                        .full-screen{
+                            display: none;
+                        }
+
+                        .photo__images-description{
+                            font-size: 12px;
+                            margin: 12px 0 14px 0;
+                        }
+
+                        .photo__images-date{
+                            font-size: 10px;
+                        }
+
+                    .photo__images-video{
+                        display: none;
+                    }
+        }

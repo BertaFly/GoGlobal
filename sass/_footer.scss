@@ -1,0 +1,181 @@
+.footer-big{
+    background-image: url(../pic/footer-bg-big.jpg);
+    padding: 116px 153px 50px 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-mini{
+    display: none;
+}
+
+
+    .footer__logo{
+        display: inline-block;
+        width: 17%;
+    }
+
+        .footer__logo-pic{
+            display: block;
+        }
+
+            .footer__logo-pic::after{
+                content: '';
+                margin: 52px 0 17px;
+                box-sizing: border-box;
+                border: 1px solid #8ecdd7;
+                height: 1px;
+                width: 100%;
+                display: block;
+            }
+
+        .footer__logo-txt{
+            color: #c6edf3;
+            font-family: $base-font;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+    address{
+        display: inline-block;
+        width: 25.5%;
+        margin: 0 11%;
+        color: #ffffff;
+        font-family: $base-font;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 32px;
+        font-style: normal;
+    }
+
+        .footer__contacts p{
+            display: block;
+        }
+
+        .footer__contacts-map{
+            display: block;
+            width: 100%;
+            margin-top: 35px;
+        }
+
+            .footer__contacts-pin{
+                width: 5%;
+                display: inline-block;
+                margin-right: 1%; 
+            }
+
+            .footer__contacts-map p{
+                display: inline-block;
+                font-size: 14px;
+            }
+
+    .footer__btns{
+        display: inline-block;
+        width: 34%;
+        text-align: center;
+        vertical-align: top;
+    }
+
+        .footer__btns-insta, .footer__btns-fb, .footer__btns-tw{
+            display: inline-block;
+            width: 14%;
+        }
+
+        .footer__btns-insta,{
+            width: 17%;
+        }
+
+        .footer__btns-donate{
+            display: inline-block;
+            width: 48%;
+            border-radius: 54px;
+            background-color: #c76b4a;
+            color: #ffffff;
+            font-family: $base-font;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 54px;
+            text-transform: uppercase;
+            margin-left: 3%;
+            vertical-align: middle;
+        }
+
+
+
+
+/* Phones ----------- */
+	@media screen 
+		and (min-device-width : 220px) 
+		and (max-device-width : 659px){
+            .footer-big{
+                display: none;
+            }
+
+            .footer-mini{
+                background: url("../pic/footer-bg-mini.png");
+                background-size: cover;
+                padding: 54px 0 15px;
+                text-align: center;
+                display: block;
+            }
+
+                .footer__btns-donate{
+                    margin: 0 auto;
+                    display: block;
+                    width: 86%;
+                }
+
+                .footer__logo-pic{
+                    margin: 36px auto;
+                    display: block;
+                    width: 100%;
+                }
+
+                    .footer__logo-pic>img{
+                        width: 60%;
+                    }
+
+                    .footer__logo-pic::after{
+                        content: "";
+                        display: block;
+                        margin: 34px 0 32px 0;
+                        height: 1px;
+                        border: 2px solid #8ecdd7;
+                        opacity: 0.5;
+                    }
+
+                .footer__contacts{
+                    display: block;
+                    margin: 0 auto 34px;
+                    width: 100%;
+                }
+
+                    .footer__contacts-map{
+                        margin: 33px auto;
+                        font-size: 12px;
+                    }
+                .footer__btns{
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+
+                    .footer__btns-insta, .footer__btns-fb, .footer__btns-tw{
+                        width: 9%;
+                    }
+
+                    .footer__btns::after{
+                        content: "";
+                        display: block;
+                        margin: 21px 0 32px 0;
+                        height: 1px;
+                        background: #8ecdd7;
+                        opacity: 0.5;
+                    }
+
+                .footer__logo-txt{
+                    display: block;
+                    margin: 0 auto;
+                }
+        }

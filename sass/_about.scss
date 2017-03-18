@@ -1,0 +1,246 @@
+.about{
+	background-image: url(../pic/about-bg-big.png);
+	background-size: cover;
+	padding-top: 266px;
+	padding-bottom: 216px;
+	margin-bottom: -180px;
+	position: relative;
+	z-index: 1;
+}
+
+	.about__header{
+		margin: 0 auto;
+		width: 100%;
+	}
+		.about__header-title{
+			@extend .title;
+			font-size: 48px;
+			line-height: 54px;
+			color: #fff;
+			float: left;
+		}
+	
+		.about__header-years{
+			float: right;
+			width: 32%;
+		}
+
+	.about__stats{
+		display: flex;
+		align-items: baseline;
+		border-radius: 36px;
+		background-color: #639a9f;
+		margin: 53px 0 86px 0;
+		padding: 53px 63px 47px 72px;
+		text-align: center;
+	}
+	
+		.about__stats>.achiv{
+			width: 18%;
+			margin-right: 2.5%;
+		}
+	
+			.achiv:last-child{
+				margin-right: 0;
+			}
+	
+			.achiv__pic{
+				width: 46%;
+				margin: 0 auto;
+			}
+
+			&>img{
+				vertical-align: bottom;
+			}
+
+		.achiv__numb{
+			@extend .title;
+			color: #ead073;
+			font-size: 48px;
+			line-height: 54px;
+			margin: 34px auto 33px;
+		}
+
+		.achiv__descrip{
+			@extend .paragraph-txt;
+			font-size: 18px;
+			line-height: 24px;
+			color: #FFF;
+			margin: 0 auto;
+		}
+
+			.achiv:last-child>.achiv__descrip{
+				font-size: 14px;
+				line-height: 20px;
+			}
+
+	.about__facts-bg{
+		background-image: url(../pic/map-pins.png);
+		background-size: contain;
+    	background-repeat: no-repeat;
+    	background-position: 60% 50%;
+	}
+
+		.about__facts-left{
+				float: left;
+				width: 30.8%;
+				border-radius: 24px;
+				background-color: #fff;
+				font-size: 0;
+				margin-top: 38px;
+			}
+
+		.about__facts-right{
+			float: right;
+			width: 30.8%;
+			border-radius: 24px;
+			background-color: #fff;
+			font-size: 0;
+			margin-top: 186px;
+			margin-bottom: 18px;
+		}
+
+			.about__facts-title{
+				width: 66%;
+				font-size: 24px;
+				font-weight: 700; 
+				line-height: 32px;
+				color: #72a9ae;
+				border-left: 10px solid #ead073;
+				border-radius: 4px;
+				padding-left: 31px;
+				margin-top: 43px;
+				font-family: $base-font;
+			}
+
+				.about__facts-right>.about__facts-title{
+					width: 100%;
+				}
+
+			.about__facts-text{
+				margin: 30px 40px 37px 34px;
+				color: #757b7c;
+				font-family: $base-font;
+				font-size: 16px;
+				line-height: 24px;
+			}			
+
+/* Phones ----------- */
+	@media screen 
+		and (min-device-width : 220px) 
+		and (max-device-width : 659px){
+			.about{
+				padding: 81px 0;
+				background-image: url(../pic/bg-about-mini.png);
+			}
+
+				.about>.container{
+					width: 100%;
+				}
+
+			.about__header{
+				display: block;
+				text-align: center;
+			}
+
+				.about__header-title{
+					font-size: 30px;
+					float: none;
+				}
+			
+			.about__header-years{
+				display: block;
+				margin: 46px auto 0;
+				float: none;
+				width: 50%;
+			}
+
+			.about__stats{
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				margin: 41px auto 86px;
+				width: 86.25%;
+				border-radius: 0;
+				background-color: #72a9ae;
+				padding: 0px;
+				text-align: center;
+				font-size: 0;
+			}
+	
+		.about__stats>.achiv{
+			width: 39%;
+			margin-right: 0;
+			vertical-align: top;
+		}
+
+			.achiv:nth-child(4)>.achiv__descrip{
+				margin-top: 27px;
+			}
+	
+			.achiv:last-child{
+				width: 100%;
+			}
+
+			.achiv__pic{
+				width: 66%;
+				margin: 0 auto;
+			}
+
+				.achiv:last-child>.achiv__pic{
+					width: 25%;
+				}
+
+			&>img{
+				vertical-align: bottom;
+			}
+
+		.achiv__numb{
+			color: #ead073;
+			font-size: 38px;
+			margin: 28px auto 22px;
+		}
+
+		.achiv__descrip{
+			display: block;
+			font-size: 16px;
+			line-height: 21px;
+			color: #FFF;
+			margin-bottom: 0;
+		}
+
+			.achiv:last-child>.achiv__descrip{
+				font-size: 14px;
+				line-height: 20px;
+			}
+		
+		.about__facts-bg{
+			width: 100%;
+			background-size: 132%;
+			background-position: 50% 50%;
+		}
+
+		.about__facts-left, .about__facts-right{
+			width: 86.25%;
+			margin: 0 auto;
+			padding-top: 32px;
+			float: none;
+		}
+
+		.about__facts-left{
+			margin-bottom: 375px; 
+		}
+
+			.about__facts-title{
+				width: 100%;
+				font-size: 22px;
+				margin: 0;
+			}
+
+			.about__facts-text{
+				font-size: 14px;
+				line-height: 21px;
+				padding: 30px 40px 37px 34px;
+				margin: 0;
+			}
+		}

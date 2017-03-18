@@ -1,0 +1,93 @@
+.goal{
+    background-image: url(../pic/goal-bg-big.png);
+    background-size: cover;
+    padding-top: 200px;
+}
+
+    .goal__title{
+        color: #ffffff;
+        font-family: $base-font;
+        font-size: 43px;
+        font-weight: 700;
+        line-height: 64px;
+        width: 25%;
+        display: inline-table;
+    }
+
+        .goal__title::after{
+            content: '';
+            margin-top: 40px;
+            width: 43px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            display: block;
+        }
+
+    .goal__list-items{
+        width: 45.1%;
+        margin: 0 12% 0 17.11%;
+        padding-bottom: 457px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+        .goal__items{
+            width: 40.6%;
+            margin-bottom: 56px;
+        }
+
+            .goal__items-pic{
+                width: 18%;
+                margin-bottom: 22px;
+            }
+
+            .goal__items-txt{
+                color: #ffffff;
+                font-family: $base-font;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+/* Phones ----------- */
+	@media screen 
+		and (min-device-width : 220px) 
+		and (max-device-width : 659px){
+            .goal{
+                background-image: url(../pic/goal-bg-mini.png);
+                background-position: 100% 102%;
+                background-repeat: no-repeat;
+            }
+            
+                .goal__title{
+                    font-size: 30px;
+                    line-height: 40px;
+                    text-align: center;
+                    display: block;
+                    margin: 0 auto;
+                    width: 64.2%;
+                }
+
+                    .goal__title::after{
+                        margin: 37px auto 69px;
+                    }
+
+                .goal__list-items{
+                    width: 93.2%;
+                    margin: 0 auto;
+                    text-align: center;
+                    display: flex;
+                }
+
+                    .goal__items-pic{
+                        width: 26.4%;
+                        margin: 0 auto 22px;
+                    }
+
+                    .goal__items-txt{
+                        font-size: 14px;
+                    }
+    }
